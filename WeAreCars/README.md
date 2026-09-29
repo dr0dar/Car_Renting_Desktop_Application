@@ -1,6 +1,6 @@
-# Users must log in via a fixed credential setup (`sta001` / `givemethekeys123`). 
+**Users must log in via a fixed credential setup (`sta001` / `givemethekeys123`).**
 
-# Setting up the Database
+### Setting up the Database
 Before running this application, you must create a local SQL server database and schema using the query provided below. 
 Open Microsoft SQL Server Management Studio (SSMS) or your preferred SQL terminal and execute:
 
@@ -39,3 +39,4 @@ CREATE TABLE Car_Booking (
 );
 
 ```
+Now you can run project.
