@@ -1,0 +1,51 @@
+﻿using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace WeAreCars.Data
+{
+    [Table("Users")]
+    public class UserEntity
+    {
+        [Key]
+        public int Id { get; set; }
+
+        [Required]
+        [StringLength(50)]
+        public string Username { get; set; }
+
+        [Required]
+        [StringLength(100)]
+        public string Password { get; set; }
+    }
+
+    [Table("CarBookings")]
+    public class CarBookingEntity
+    {
+        [Key]
+        public int Id { get; set; }
+
+        [Required]
+        public string CustomerFirstName { get; set; }
+
+        [Required]
+        public string CustomerSurname { get; set; }
+
+        [Required]
+        public string CustomerAddress { get; set; }
+
+        public int CustomerAge { get; set; }
+        public bool HasValidDrivingLicense { get; set; }
+        public int NumberOfDays { get; set; } // 1 to 28
+
+        public int SelectedCarType { get; set; }
+        public int SelectedFuelType { get; set; }
+
+        public bool UnlimitedMileage { get; set; }
+        public bool BreakdownCover { get; set; }
+
+        public decimal TotalCost { get; set; }
+        public int StaffID { get; set; }
+        public DateTime BookingDate { get; set; }
+    }
+}

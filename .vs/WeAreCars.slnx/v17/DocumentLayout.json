@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Sem 2\\Engineering Assignment\\WeAreCars\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A96D61DB-1F91-4876-90DA-19CB932489DB}|WeAreCars\\WeAreCars.csproj|D:\\Sem 2\\Engineering Assignment\\WeAreCars\\wearecars\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A96D61DB-1F91-4876-90DA-19CB932489DB}|WeAreCars\\WeAreCars.csproj|solutionrelative:wearecars\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96D61DB-1F91-4876-90DA-19CB932489DB}|WeAreCars\\WeAreCars.csproj|D:\\Sem 2\\Engineering Assignment\\WeAreCars\\wearecars\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A96D61DB-1F91-4876-90DA-19CB932489DB}|WeAreCars\\WeAreCars.csproj|solutionrelative:wearecars\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96D61DB-1F91-4876-90DA-19CB932489DB}|WeAreCars\\WeAreCars.csproj|D:\\Sem 2\\Engineering Assignment\\WeAreCars\\wearecars\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A96D61DB-1F91-4876-90DA-19CB932489DB}|WeAreCars\\WeAreCars.csproj|solutionrelative:wearecars\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96D61DB-1F91-4876-90DA-19CB932489DB}|WeAreCars\\WeAreCars.csproj|d:\\sem 2\\engineering assignment\\wearecars\\wearecars\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A96D61DB-1F91-4876-90DA-19CB932489DB}|WeAreCars\\WeAreCars.csproj|solutionrelative:wearecars\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96D61DB-1F91-4876-90DA-19CB932489DB}|WeAreCars\\WeAreCars.csproj|D:\\Sem 2\\Engineering Assignment\\WeAreCars\\wearecars\\models\\models.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A96D61DB-1F91-4876-90DA-19CB932489DB}|WeAreCars\\WeAreCars.csproj|solutionrelative:wearecars\\models\\models.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96D61DB-1F91-4876-90DA-19CB932489DB}|WeAreCars\\WeAreCars.csproj|D:\\Sem 2\\Engineering Assignment\\WeAreCars\\wearecars\\data\\databaseconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A96D61DB-1F91-4876-90DA-19CB932489DB}|WeAreCars\\WeAreCars.csproj|solutionrelative:wearecars\\data\\databaseconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Sem 2\\Engineering Assignment\\WeAreCars\\WeAreCars\\Program.cs",
+              "RelativeDocumentMoniker": "WeAreCars\\Program.cs",
+              "ToolTip": "D:\\Sem 2\\Engineering Assignment\\WeAreCars\\WeAreCars\\Program.cs",
+              "RelativeToolTip": "WeAreCars\\Program.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBAAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T01:47:53.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DatabaseConnection.cs",
+              "DocumentMoniker": "D:\\Sem 2\\Engineering Assignment\\WeAreCars\\WeAreCars\\Data\\DatabaseConnection.cs",
+              "RelativeDocumentMoniker": "WeAreCars\\Data\\DatabaseConnection.cs",
+              "ToolTip": "D:\\Sem 2\\Engineering Assignment\\WeAreCars\\WeAreCars\\Data\\DatabaseConnection.cs",
+              "RelativeToolTip": "WeAreCars\\Data\\DatabaseConnection.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T01:36:05.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Models.cs",
+              "DocumentMoniker": "D:\\Sem 2\\Engineering Assignment\\WeAreCars\\WeAreCars\\Models\\Models.cs",
+              "RelativeDocumentMoniker": "WeAreCars\\Models\\Models.cs",
+              "ToolTip": "D:\\Sem 2\\Engineering Assignment\\WeAreCars\\WeAreCars\\Models\\Models.cs",
+              "RelativeToolTip": "WeAreCars\\Models\\Models.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T02:37:03.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\Sem 2\\Engineering Assignment\\WeAreCars\\WeAreCars\\Form1.cs",
+              "RelativeDocumentMoniker": "WeAreCars\\Form1.cs",
+              "ToolTip": "D:\\Sem 2\\Engineering Assignment\\WeAreCars\\WeAreCars\\Form1.cs",
+              "RelativeToolTip": "WeAreCars\\Form1.cs",
+              "ViewState": "AgIAAOQBAAAAAAAAAAAAwMoBAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T16:51:28.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "D:\\Sem 2\\Engineering Assignment\\WeAreCars\\WeAreCars\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "WeAreCars\\Form1.Designer.cs",
+              "ToolTip": "D:\\Sem 2\\Engineering Assignment\\WeAreCars\\WeAreCars\\Form1.Designer.cs",
+              "RelativeToolTip": "WeAreCars\\Form1.Designer.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T16:39:40.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "README.md",
+              "DocumentMoniker": "D:\\Sem 2\\Engineering Assignment\\WeAreCars\\WeAreCars\\README.md",
+              "RelativeDocumentMoniker": "WeAreCars\\README.md",
+              "ToolTip": "D:\\Sem 2\\Engineering Assignment\\WeAreCars\\WeAreCars\\README.md",
+              "RelativeToolTip": "WeAreCars\\README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-05-07T02:21:47.236Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

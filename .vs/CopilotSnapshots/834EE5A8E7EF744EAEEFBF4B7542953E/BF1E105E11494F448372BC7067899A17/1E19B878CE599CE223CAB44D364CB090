@@ -1,0 +1,96 @@
+﻿# WeAreCars Management System 🚗
+
+Welcome to the **WeAreCars** Booking Management System. This project demonstrates a beginner-friendly C# Windows Forms application targeting .NET Framework 4.7.2. 
+
+If you are just getting started with C# development, UI construction, or ADO.NET database operations, this reference project breaks down all the basic moving parts that go into creating a functional application!
+
+---
+
+## 📋 Table of Contents
+1. Workflow & Features
+2. Running the Application
+3. Codebase Architecture
+4. File By File Explanation
+
+---
+
+## 1. Workflow & Features
+
+1. **Authentication**: Users must log in via a fixed credential setup (`sta001` / `givemethekeys123`). The system limits the user to a maximum of 3 invalid attempts before locking them out. 
+2. **Booking Management**: Staff members process rentals inside an intuitive UI. Features include standard data fields (name, age, license valid checks) plus dynamically selected rates based on:
+   - Base Price: £25/day
+   - Upgradable Car Types (Family, Sports, SUV)
+   - Alternative Fuel Types (Hybrid, Full Electric)
+   - Checkbox Extra Services (Insurance, Unlimited Mileage)
+3. **Live Price Estimations**: As users select dropdowns or check boxes, the system visually maps out the mathematical equation leading to the final total cost on the screen, updating in real-time.
+4. **Data Persistence (SQL)**: Once a clerk hits "Review & Process" and confirms, the system uses straight ADO.NET variables to ship data directly into a Microsoft SQL Server!
+
+---
+
+## 2. Running The Application
+
+### SQL Database Requirement
+Before running this application, you must create a local SQL server database and schema using the query provided below:
+
+```sql
+CREATE DATABASE WeAreCars;
+GO
+USE WeAreCars;
+GO
+CREATE TABLE Users (
+    UserID INT IDENTITY(1,1) PRIMARY KEY,
+    Username NVARCHAR(50) NOT NULL UNIQUE,
+    Password NVARCHAR(255) NOT NULL
+);
+INSERT INTO Users (Username, Password) VALUES ('sta001', 'givemethekeys123');
+
+CREATE TABLE Car_Booking (
+    BookingID INT IDENTITY(1,1) PRIMARY KEY,
+    CustomerFirstName NVARCHAR(100) NOT NULL,
+    CustomerSurname NVARCHAR(100) NOT NULL,
+    CustomerAddress NVARCHAR(500) NOT NULL,
+    CustomerAge INT NOT NULL,
+    HasValidDrivingLicense BIT NOT NULL,
+    NumberOfDays INT NOT NULL CHECK (NumberOfDays >= 1 AND NumberOfDays <= 28),
+    CarType INT NOT NULL,    
+    FuelType INT NOT NULL,   
+    HasUnlimitedMileage BIT NOT NULL DEFAULT 0,
+    HasBreakdownCover BIT NOT NULL DEFAULT 0,
+    TotalCost DECIMAL(18,2) NOT NULL,
+    StaffID INT NOT NULL,
+    BookingDate DATETIME NOT NULL DEFAULT GETDATE(),
+    CONSTRAINT FK_CarBooking_Users FOREIGN KEY (StaffID) REFERENCES Users(UserID)
+);
+```
+
+### Running the App
+Once your database is created, simply hit **F5** in Visual Studio! The application connects out-of-the-box leveraging `(local)` inside `App.config`.
+
+---
+
+## 3. Codebase Architecture
+
+The project has intentionally been set up cleanly with three main aspects without relying heavily on over-engineered "Enterprise" design patterns (like Repository/ORM layers). 
+
+1. **User Interface (`Form1.cs`)**: Drives all user actions.
+2. **Models (`Models/Models.cs`)**: Stores data-objects holding values.
+3. **Database Connectivity (`Data/DatabaseConnection.cs`)**: Responsible for establishing direct pipes to SQL.
+
+---
+
+## 4. File By File Explanation
+
+### `Models/Models.cs`
+This file is the "blueprint" blueprint of what real-world structures look like inside the computer's memory. It contains pure "Property" (getter/setter) classes like `CarBooking`. This file also holds intelligent business logic natively. For example, `CalculateTotalCost()` evaluates the class's selected components (number of days, vehicle rate) to do math.
+
+### `Data/DatabaseConnection.cs`
+Responsible purely for grabbing the XML configuration text out of `App.config` and manufacturing a standard `SqlConnection` out of it. 
+
+### `Form1.cs`
+This is your Windows form code-behind. 
+- **`SetupUI`:** Creates text boxes, drop-downs, and labels manually mapping coordinates on the screen.
+- **`BtnLogin_Click`:** Secures the environment behind login attempts.
+- **`UpdatePriceEstimate`:** Connects exactly to dropdown changes. Every time an option changes, this method clears and visually updates the screen's equation showing *how* a price is built.
+- **`SaveBookingToDatabase`:** Demonstrates highly protected and scalable `SqlCommand` statements leveraging "Parameters" (protecting from SQL injections!) to save directly. 
+
+Enjoy exploring C# & .NET Forms!

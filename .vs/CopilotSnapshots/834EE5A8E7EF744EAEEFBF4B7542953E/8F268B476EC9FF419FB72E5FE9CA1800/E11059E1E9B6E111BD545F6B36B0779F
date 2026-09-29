@@ -1,0 +1,20 @@
+﻿using System;
+using System.Configuration;
+using System.Data.SqlClient;
+
+namespace WeAreCars.Data
+{
+    public static class DatabaseConnection
+    {
+        public static string GetConnectionString()
+        {
+            return ConfigurationManager.ConnectionStrings["WeAreCarsDB"].ConnectionString;
+        }
+
+        public static SqlConnection GetConnection()
+        {
+            var connectionString = GetConnectionString();
+            return new SqlConnection(connectionString);
+        }
+    }
+}

@@ -1,0 +1,32 @@
+﻿using System;
+using System.Configuration;
+using System.Data.SqlClient;
+
+namespace WeAreCars.Data
+{
+    /// <summary>
+    /// A utility helper class acting as the core entry-point for database communication 
+    /// abstracting raw ADO.NET connection setups.
+    /// </summary>
+    public static class DatabaseConnection
+    {
+        /// <summary>
+        /// Retrieves the SQL Server Connection string stored in App.config
+        /// </summary>
+        /// <returns>A raw SQL Server string</returns>
+        public static string GetConnectionString()
+        {
+            return ConfigurationManager.ConnectionStrings["WeAreCarsDB"].ConnectionString;
+        }
+
+        /// <summary>
+        /// Instantiates and provisions a new SQL Connection to interface with the database.
+        /// </summary>
+        /// <returns>An initialized SqlConnection instance</returns>
+        public static SqlConnection GetConnection()
+        {
+            var connectionString = GetConnectionString();
+            return new SqlConnection(connectionString);
+        }
+    }
+}
